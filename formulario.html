@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <h1>Adicione seu produto</h1>
+
+        <form id="formProdutos">
+
+            <label for="produto">Produto:</label>
+            <input type="text" name="produto" id="produto" placeholder="Feijão"> 
+
+            <label for="preco">Preço:</label>
+            <input type="number" name="preco" step="0.01" min="0" id="preco" placeholder="0,00"> 
+
+            <label for="origem">Origem:</label>
+            <input type="text" name="origem" id="origem" placeholder="Vegetal"> 
+
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria">
+                <option value="">Selecione</option>
+                <option value="frutas">Frutas</option>
+                <option value="verduras">Vegetais</option>
+                <option value="legumes">Legumes</option>
+                <option value="cereais">Cereais</option>
+                <option value="higiene">Higiene</option>
+                <option value="bebidas">Bebidas</option>
+            </select> <br>
+
+            <label for="lote">Lote:</label>
+            <input type="number" min="0" id="lote" placeholder="0000">
+
+            <label for="validade">Validade</label>
+            <input type="date" name="data" id="data"> 
+
+            <button type="submit">ADICIONAR</button>
+            <button id="btnIrParaLista" class="btn btn-primary">IR PARA LISTA</button>
+
+        </form>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
